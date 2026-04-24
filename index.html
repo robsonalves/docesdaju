@@ -1190,30 +1190,88 @@
       .about-grid { grid-template-columns: 1fr; gap: 3rem; }
       .hero h1 { font-size: 3.2rem; }
       .hero-float-item { display: none; }
+      .location-cards { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 768px) {
+      html, body { overflow-x: hidden; max-width: 100vw; }
+      section { padding: 4rem 1.2rem; }
+
+      .hero { min-height: 100svh; padding: 5rem 1.5rem 3rem; }
       .hero h1 { font-size: 2.5rem; }
-      .hero .subtitle { font-size: 1.2rem; }
-      .hero-logo { width: 160px; height: 160px; }
+      .hero .subtitle { font-size: 1.1rem; }
+      .hero-logo { width: 150px; height: 150px; }
+      .hero-logo-placeholder { font-size: 1.1rem; }
+      .hero p { font-size: 1rem; margin-bottom: 2rem; }
       .section-title { font-size: 2rem; }
+      .section-header { margin-bottom: 2.5rem; }
 
-      .header-content { flex-direction: column; gap: 0.5rem; }
-      nav { gap: 0; }
-      nav a { font-size: 0.72rem; padding: 0.4rem 0.6rem; }
+      header { padding: 0.6rem 0; }
+      .header-content { flex-direction: column; gap: 0.3rem; padding: 0 1rem; }
+      .logo-text { font-size: 1.3rem; }
+      nav { gap: 0; flex-wrap: wrap; justify-content: center; }
+      nav a { font-size: 0.68rem; padding: 0.35rem 0.5rem; letter-spacing: 0.3px; }
+      nav a.nav-cta { margin-left: 0; padding: 0.35rem 0.7rem; font-size: 0.68rem; }
 
-      .products-grid { grid-template-columns: 1fr; max-width: 400px; }
-      .about-features { grid-template-columns: 1fr; }
-      .location-cards { grid-template-columns: 1fr; }
+      .products-grid { grid-template-columns: 1fr; max-width: 100%; }
+      .product-icon { height: 150px; font-size: 3.5rem; }
+      .about-features { grid-template-columns: 1fr 1fr; }
+      .location-cards { grid-template-columns: 1fr; max-width: 100%; margin: 1.5rem auto 0; gap: 1rem; }
+      .location-card { padding: 1.8rem 1.5rem; }
       .highlight-stats { gap: 2rem; }
       .highlight-quote { font-size: 1.5rem; }
+      .stat-number { font-size: 2.8rem; }
       .cta-section h2 { font-size: 2rem; }
+      .cta-section { padding: 4rem 1.5rem; }
+
+      .cta-buttons { flex-direction: column; align-items: center; }
+      .btn { width: 100%; max-width: 320px; justify-content: center; }
+
+      .gallery { padding: 4rem 1rem; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; max-width: 100%; }
+      .gallery-overlay span { font-size: 0.85rem; padding: 0.4rem 0.8rem; }
 
       .footer-content { flex-direction: column; text-align: center; }
-      .footer-links { justify-content: center; }
-
-      .gallery-item { width: 180px; height: 180px; font-size: 3.5rem; }
+      .footer-links { justify-content: center; flex-wrap: wrap; }
       .scroll-indicator { display: none; }
+
+      .whatsapp-float { width: 54px; height: 54px; bottom: 1.2rem; right: 1.2rem; }
+      .whatsapp-float svg { width: 26px; height: 26px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 2rem; letter-spacing: 1px; }
+      .hero .subtitle { font-size: 1rem; }
+      .hero-logo { width: 130px; height: 130px; }
+      .hero-logo-placeholder { font-size: 0.95rem; }
+      .hero p { font-size: 0.92rem; }
+
+      nav a { font-size: 0.65rem; padding: 0.35rem 0.5rem; }
+      nav a.nav-cta { padding: 0.4rem 0.8rem; }
+
+      .section-title { font-size: 1.7rem; }
+      .section-badge { font-size: 0.65rem; letter-spacing: 3px; }
+
+      .about-features { grid-template-columns: 1fr; }
+      .feature { padding: 1.4rem; }
+
+      .highlight-quote { font-size: 1.2rem; }
+      .highlight-quote::before { font-size: 4rem; }
+      .stat-number { font-size: 2.2rem; }
+      .stat-label { font-size: 0.7rem; letter-spacing: 2px; }
+
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.3rem; }
+
+      .cta-section h2 { font-size: 1.7rem; }
+      .cta-section p { font-size: 0.95rem; }
+
+      .product-info { padding: 1.4rem; }
+      .product-info h3 { font-size: 1.2rem; }
+      .product-info p { font-size: 0.82rem; }
+
+      .location-card { padding: 2rem 1.5rem; }
+
+      .footer-links { gap: 1rem; }
     }
   </style>
 </head>
